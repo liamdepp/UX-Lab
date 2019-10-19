@@ -8,23 +8,27 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div>
         <header>
-            <h1>Carpool.dt</h1>
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+            <h1>Carpool.dt 
+                <span class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </span>
+            </h1>
         </header>
         <section class="profile-page">
             <img src="https://i.chzbgr.com/full/8334924288/hCFACD046/" alt="">
             <div class="name-account">
-                <h2>First Last</h2>
-                <h2>Driver</h2>
+                <h2 id="name">Paul Goodrich</h2>
+                <h2 id="account">Driver</h2>
             </div>
             <div class="personal-info">
-                <h4>Home: 1234 abc Rd</h4>
+                <h4>Home: 43555 Ford Rd.</h4>
                 <h4>Destination: 1570 Woodward ave.</h4>
                 <h4>Rating: <span id="star">
                     <span class="fa fa-star checked"></span>
@@ -35,15 +39,12 @@
                     </span>
                     </h4>
                 </div>
-
         </section>
     </div>
     <script>
-        function myfunction(x) {
-            x.classList.toggle("change");
+        function myFunction(x) {
+            x.classList.toggle("change")
         }
-    
-    
     </script>
 </body>
 </html>

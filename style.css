@@ -4,8 +4,12 @@ body {
 header h1 {
     background-color: rgb(37, 187, 63);
     padding: 10px;
-    text-shadow: 0 0 5px rgb(254, 250, 254);
+    text-shadow: 0 0 5px rgb(100, 105, 101);
     border-radius: 10px;
+    color: rgb(254, 250, 254);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 section img {
     border-radius: 50%;
@@ -25,6 +29,7 @@ section img {
 }
 .name-account {
     display: flex;
+    flex-direction: column;
     border-bottom: 2px solid rgb(100, 105, 101)
 }
 .bar1, .bar2, .bar3 {
@@ -32,13 +37,31 @@ section img {
     height: 5px;
     background-color: #333;
     margin: 6px 0;
+    transition: 0.4s;
 }
 .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 8px);
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 .change .bar2 {
     opacity: 0;
 }
 .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, 6px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+.container {
+    cursor: pointer;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#account {
+    text-align: center;
+    margin-block-start: 0;
+}
+#name {
+    text-align: center;
 }
