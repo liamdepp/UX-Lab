@@ -2,7 +2,7 @@ body {
     font-family: 'Muli', 'roboto', sans-serif;
 }
 header h1 {
-    background-color: rgb(37, 187, 63);
+    background-color: rgb(37, 187, 63) !important;
     padding: 10px;
     text-shadow: 0 0 5px rgb(100, 105, 101);
     border-radius: 10px;
@@ -17,7 +17,7 @@ section img {
     height: 200px;
 }
 #star {
-    color: orange;
+    color: orange !important;
 }
 .profile-page {
     background-color: rgb(254, 250, 254);
@@ -35,9 +35,10 @@ section img {
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: rgb(254, 250, 254);
     margin: 6px 0;
     transition: 0.4s;
+    box-shadow: 0 0 5px rgb(100, 105, 101);
 }
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 8px);
@@ -64,4 +65,12 @@ header {
 }
 #name {
     text-align: center;
+}
+.bio {
+    display: flex;
+    align-items: baseline;
+    border-top: 2px solid rgb(100, 105, 101);
+}
+#bio {
+    padding-right: 5px;
 }
